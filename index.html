@@ -517,7 +517,7 @@
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      opacity: 0.9;
+      color: #facc15;
     }
     .site-footer .footer-col p,
     .site-footer .footer-col li {
@@ -555,7 +555,7 @@
     <div class="sidebar-logo" onclick="showSection('home', document.querySelector('.sidebar a[onclick*=home]')); document.querySelectorAll('.topnav-btn').forEach(b=>b.classList.remove('active'))" style="cursor:pointer">Dev Manual</div>
 
     <div class="sidebar-section">홈</div>
-    <a href="#" class="active" onclick="showSection('home', this)">대시보드</a>
+    <a href="#" class="active" onclick="showSection('home', this)" style="color:#facc15; font-weight:bold">랜딩 페이지</a>
 
     <div class="sidebar-section brand-title brand-claude">Claude</div>
     <a href="#" data-brand="claude" onclick="showSection('claude-overview', this)">Claude 4종 소개</a>
@@ -607,7 +607,7 @@
     <div id="home" class="content-section">
       <div class="hero">
         <h1>개발 매뉴얼</h1>
-        <p>Claude 4종 완벽 가이드, Supabase, Vercel, GitHub, VS Code 사용법을 한곳에서 확인하세요.</p>
+        <p style="color:#facc15; font-weight:bold; font-size:calc(1em + 4pt)">Claude 4종 완벽 가이드, Supabase, Vercel, GitHub, VS Code 사용법을 한곳에서 확인하세요.</p>
       </div>
       <div class="cards">
         <a class="card card-claude" onclick="showSection('claude-overview', document.querySelector('[onclick*=claude-overview]'))">
