@@ -8,7 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0f1117;
+      --bg: #064e3b;
       --sidebar-bg: #161822;
       --card-bg: #1c1e2e;
       --border: #2a2d3e;
@@ -38,7 +38,7 @@
       left: 0;
       right: 0;
       height: 56px;
-      background: var(--sidebar-bg);
+      background: #333333;
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
@@ -494,6 +494,47 @@
       .sidebar { display: none; }
       .main { margin-left: 0; padding: 24px; }
       .cards { grid-template-columns: 1fr; }
+      .site-footer { margin-left: 0; padding: 24px; }
+      .site-footer .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #333333;
+      color: #fff;
+      padding: 40px 64px;
+      margin-left: 0;
+      border-top: 1px solid var(--border);
+    }
+    .site-footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .site-footer .footer-col h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+    .site-footer .footer-col p,
+    .site-footer .footer-col li {
+      font-size: 13px;
+      line-height: 1.8;
+      opacity: 0.85;
+    }
+    .site-footer .footer-col ul {
+      list-style: none;
+    }
+    .site-footer .footer-bottom {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      font-size: 12px;
+      opacity: 0.7;
+      text-align: center;
     }
   </style>
 </head>
@@ -3608,6 +3649,39 @@ git config --global user.email "your@email.com"</code></pre>
   ]
 }</code></pre>
     </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Dev Manual</h4>
+        <p>Claude Code, GitHub, Supabase, Vercel, VS Code 개발 환경을 위한 종합 매뉴얼입니다. 초보자부터 실무 개발자까지 활용할 수 있는 가이드를 제공합니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4>포함된 가이드</h4>
+        <ul>
+          <li>Claude Code - AI 코딩 어시스턴트</li>
+          <li>GitHub - 버전 관리 & 협업</li>
+          <li>Supabase - 백엔드 서비스</li>
+          <li>Vercel - 배포 플랫폼</li>
+          <li>VS Code - 코드 에디터</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>관련 링크</h4>
+        <ul>
+          <li>Anthropic - anthropic.com</li>
+          <li>GitHub - github.com</li>
+          <li>Supabase - supabase.com</li>
+          <li>Vercel - vercel.com</li>
+          <li>VS Code - code.visualstudio.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Dev Manual by <strong style="color:#facc15">Jaiwoo Shim</strong>. All rights reserved. | Claude Code / Supabase / Vercel 개발 매뉴얼
+    </div>
+    </footer>
 
   </div>
 
