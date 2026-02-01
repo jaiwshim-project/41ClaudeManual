@@ -76,6 +76,7 @@
     .topnav-btn[data-brand="vscode"] { color: var(--accent-vscode); border-color: rgba(236,72,153,0.3); }
     .topnav-btn[data-brand="manual"] { color: #ffffff; border-color: rgba(245,158,11,0.3); }
 
+
     .topnav-btn:hover {
       background: var(--hover);
     }
@@ -3912,6 +3913,7 @@ git config --global user.email "your@email.com"</code></pre>
       });
     })();
 
+
     // On page load, restore last viewed section
     (function() {
       var saved = null;
@@ -3925,6 +3927,11 @@ git config --global user.email "your@email.com"</code></pre>
         showSection('home', homeLink);
       }
     })();
+  </script>
+
+  <script src="https://chatbot-sdk.aitalker.co.kr/talker-sdk.umd.js"></script>
+  <script>
+    TalkerSDK.initializeTalkerSDK({ code: "art015", position: "right" });
   </script>
 
 </body>
